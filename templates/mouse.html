@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/mouse.css">
+  <title>Mouse</title>
+</head>
+<body>
+  {% block content%}
+  <h1>Mouse</h1>
+  <p>En está pagina podras encontrar diferentes tipos de mouse</p>
+
+  <ul>
+    <li>
+      Inalambricos
+    </li>
+    <li>
+      Gamer
+    </li>
+
+    <li>
+      Con DPI configurable
+    </li>
+  </ul>
+<main>
+ <ul class="list">
+      <li class="list__item">
+        <a href="{{url_for('mouse')}}">
+        <img class="item__img" src="../static/img/raton.png">
+        <span>Mouse</span></a>
+      </li>
+
+    
+   <ul class="list">
+      <li class="list__item">
+        <a href="{{url_for('mouse')}}">
+        <img class="item__img" src="../static/img/raton.png">
+        <span>Otro Mouse</span></a>
+      </li>
+
+    <ul class="list">
+      <li class="list__item">
+        <a href="{{url_for('mouse')}}">
+        <img class="item__img" src="../static/img/raton.png">
+        <span>Otro nuevo Mouse</span></a>
+      </li>
+      </main>
+{%endblock%}
+</body>
+</html>
