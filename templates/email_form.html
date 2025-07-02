@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar Correo</title>
+</head>
+<body>
+    <h1>Enviar Correo Electrónico</h1>
+    <form method="POST" action="/send_email_submit">
+        <label>Tu correo:</label><br>
+        <input type="email" name="correo_user" required><br><br>
+        
+        <label>Correo destino:</label><br>
+        <input type="email" name="correo_send" required><br><br>
+        
+        <label>Asunto:</label><br>
+        <input type="text" name="asunto" value="Prueba"><br><br>
+        
+        <label>Mensaje:</label><br>
+        <textarea name="mensaje">Esto es una prueba</textarea><br><br>
+        
+        <input type="submit" value="Enviar Correo">
+    </form>
+</body>
+</html>
